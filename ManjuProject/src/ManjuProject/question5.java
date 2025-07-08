@@ -3,7 +3,7 @@ package ManjuProject;
 public class question5 {
 
 	public static void main(String[] args) {
-		 char ch = '#';  // Change this to test other characters
+		 char ch = '7';  // Change this to test other characters
 
 	        // Check the type of character
 	        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
@@ -11,7 +11,7 @@ public class question5 {
 	        } else if (ch >= '0' && ch <= '9') {
 	            System.out.println("Digit");
 	        } else {
-	            System.out.println("Social character");
+	            System.out.println("Special character");
 		}
 
 
