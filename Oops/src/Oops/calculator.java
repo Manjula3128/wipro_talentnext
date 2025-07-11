@@ -1,7 +1,6 @@
 package Oops;
-import java.util.Scanner;
-
-class Cal {
+import java.util.*;
+public class calculator {
 
     static int powerInt(int num1, int num2) {
         return (int) Math.pow(num1, num2);
@@ -14,16 +13,14 @@ class Cal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter integer base and exponent: ");
         int intBase = sc.nextInt();
         int intExp = sc.nextInt();
         int intResult = powerInt(intBase, intExp);
-        System.out.println("Integer power result: " + intResult);
-
-        System.out.print("Enter double base and exponent: ");
+        System.out.println("Integer Power: " + intResult);
+        
         double doubleBase = sc.nextDouble();
-        int doubleExp = sc.nextInt();
+        int doubleExp = sc.nextInt();  
         double doubleResult = powerDouble(doubleBase, doubleExp);
-        System.out.println("Double power result: " + doubleResult);
+        System.out.println("Double Power: " + doubleResult);
     }
 }

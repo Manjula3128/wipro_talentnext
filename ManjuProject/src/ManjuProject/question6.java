@@ -1,19 +1,27 @@
 package ManjuProject;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class question6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: "); // Prompt the user
-        int a = sc.nextInt();
 
-        if (a % 2 == 0) {
-            System.out.println("Even");
+        String gender = sc.nextLine();
+        int age = sc.nextInt();
+
+        if (gender.equals("female")) {
+            if (age >= 1 && age <= 58) {
+                System.out.println("the percentage of intrest is 8.2%");
+            } else if (age >= 59 && age <= 100) {
+                System.out.println("the percentage of intrest is 9.2%");
+            }
         } else {
-            System.out.println("Odd");
+            if (age >= 1 && age <= 58) {
+                System.out.println("the percentage of intrest is 8.4%");
+            } else {
+                System.out.println("the percentage of intrest is 10.5%");
+            }
         }
 
-        sc.close(); // Close the scanner to avoid resource leak
+        sc.close();
     }
 }
