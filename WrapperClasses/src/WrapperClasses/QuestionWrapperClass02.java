@@ -1,6 +1,6 @@
 package WrapperClasses;
 import java.util.Scanner;
-public class QuestionWrapperClasses02 {
+public class QuestionWrapperClass02 {
 	
      public static void main(String[] args) {
     	 
